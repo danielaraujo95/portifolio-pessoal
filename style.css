@@ -1,4 +1,10 @@
-body,h1, h2, ul, li, p, a {
+body,
+h1,
+h2,
+ul,
+li,
+p,
+a {
   margin: 0px;
   padding: 0px;
 }
@@ -6,10 +12,11 @@ body {
   font-family: 'vollkorn', Arial, Helvetica, sans-serif;
   color: rgba(51, 51, 51, 1);
 }
+
 ul {
   list-style: none;
 }
-a {
+a:link {
   text-decoration: none;
 }
 img {
@@ -47,9 +54,10 @@ h3 {
   margin: 0 auto;
   padding: 15px;
   display: flex;
-  
-
-
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .menu a {
@@ -104,7 +112,7 @@ h3 {
 .home {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 150px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -220,7 +228,7 @@ h3 {
   align-items: center;
 }
 
-.menu-btn{
+.menu-btn {
   display: block;
   color: white;
   width: 36px;
@@ -231,25 +239,25 @@ h3 {
   position: relative;
   cursor: pointer;
   -webkit-backface-visibility: hidden;
-
 }
 
-.menu-btn::after, .menu-btn::before{
+.menu-btn::after,
+.menu-btn::before {
   content: '';
   display: block;
   height: 4px;
   margin-top: 6px;
   background: currentColor;
   position: relative;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
 }
 
-.menu-btn:hover{
+.menu-btn:hover {
   border-top-color: transparent;
 }
 
-.menu-btn:hover::after{
+.menu-btn:hover::after {
   margin-top: 0px;
   top: 2px;
-  transform: rotate(45deg); 
+  transform: rotate(45deg);
 }
