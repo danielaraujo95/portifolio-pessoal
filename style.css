@@ -128,9 +128,17 @@ h3 {
 }
 
 .Insurtech {
-  max-width: 1000px;
+  /*max-width: 1000px;
   margin: 0 auto;
   padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   */
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 200px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
