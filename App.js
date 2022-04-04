@@ -11,3 +11,7 @@ $('.menu-nav a').click(function (e) {
     500,
   );
 });
+
+$('.menu-btn').click(function () {
+  $(this).toggleClass('active');
+});

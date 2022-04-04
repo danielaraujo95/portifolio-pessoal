@@ -48,7 +48,13 @@ h3 {
 h3 {
   font-weight: bold;
 }
-
+.menu {
+  background-color: rgba(89, 138, 238, 1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
 .menu .menu-nav {
   background-color: rgba(89, 138, 238, 1);
   margin: 0 auto;
@@ -273,12 +279,32 @@ h3 {
   transition: transform 0.2s ease;
 }
 
-.menu-btn:hover {
+.menu-btn.active {
   border-top-color: transparent;
 }
 
-.menu-btn:hover::after {
+.menu-btn.active::after {
   margin-top: 0px;
   top: 2px;
   transform: rotate(45deg);
 }
+.menu-btn.active::before {
+  margin-top: 0px;
+  top: 6px;
+  transform: rotate(135deg);
+}
+/* (estou tentando criar um menu mobile)
+.mobile-menu {
+  position: fixed;
+  background-color: rgba(89, 138, 238, 1);
+  padding: 10px;
+  top: 60px;
+}
+.menu.mobile-menu ul li {
+  display: block;
+}
+.mobile-menu ul li a {
+  border-top: 2px solid;
+  width: 100%;
+  text-align: center;
+} */
